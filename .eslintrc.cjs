@@ -1,7 +1,8 @@
 /* eslint-env node */
 
 module.exports = {
-    extends: ['@agoric/eslint-config', 'prettier'],
+    extends: ['@agoric', 'prettier'],
     plugins: ['prettier'],
-    rules: { 'quotes': ['error', 'single'], }
+    rules: { 'quotes': ['error', 'single'], },
+    parserOptions: { 'ecmaVersion': 2020 },
 };
